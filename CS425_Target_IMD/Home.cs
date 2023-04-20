@@ -20,6 +20,7 @@ namespace CS425_Target_IMD
         private void button1_Click(object sender, EventArgs e)
         {
             //String UserName = textBox1.Text;
+            UserNameText.Text =
             String UserName = UserNameHome.Text;
             String PassWord = PassWordHome.Text;
             MessageBox.Show("User Name: " + UserName + "\nPassword: " +PassWord);
@@ -36,8 +37,7 @@ namespace CS425_Target_IMD
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //String UserName = textBox1.Text;
-            //MessageBox.Show("User Name: " + UserName);
+
         }
     }
 }

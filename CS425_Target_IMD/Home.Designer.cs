@@ -43,7 +43,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(134, 56);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -66,6 +66,7 @@
             this.UserNameHome.Name = "UserNameHome";
             this.UserNameHome.Size = new System.Drawing.Size(100, 20);
             this.UserNameHome.TabIndex = 2;
+            this.UserNameHome.Text = "Enter ID ...";
             this.UserNameHome.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // PassWordHome
@@ -74,11 +75,13 @@
             this.PassWordHome.Name = "PassWordHome";
             this.PassWordHome.Size = new System.Drawing.Size(100, 20);
             this.PassWordHome.TabIndex = 3;
+            this.PassWordHome.Text = "Enter Password ...";
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(834, 561);
             this.Controls.Add(this.PassWordHome);
             this.Controls.Add(this.UserNameHome);
