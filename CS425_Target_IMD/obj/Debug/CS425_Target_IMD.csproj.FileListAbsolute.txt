@@ -1,0 +1,12 @@
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\bin\Debug\CS425_Target_IMD.exe.config
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\bin\Debug\CS425_Target_IMD.exe
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\bin\Debug\CS425_Target_IMD.pdb
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.csproj.AssemblyReference.cache
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.csproj.SuggestedBindingRedirects.cache
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.EmployeePage.resources
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.Home.resources
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.Properties.Resources.resources
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.csproj.GenerateResource.cache
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.csproj.CoreCompileInputs.cache
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.exe
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_Target_IMD\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.pdb
