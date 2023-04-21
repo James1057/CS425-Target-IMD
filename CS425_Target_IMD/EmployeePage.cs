@@ -12,6 +12,7 @@ namespace CS425_Target_IMD
 {
     public partial class EmployeePage : Form
     {
+        public string UserNameGlobal;
         public EmployeePage()
         {
             InitializeComponent();
@@ -24,6 +25,15 @@ namespace CS425_Target_IMD
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void EmployeePage_Load(object sender, EventArgs e)
+        {
+            //Loading elements on the home page
+            MessageBox.Show(UserNameGlobal);
+            textBox1.Text = UserNameGlobal;
+            textBox1.ReadOnly = true;
 
         }
     }

@@ -13,8 +13,11 @@ using System.Threading;
 
 namespace CS425_Target_IMD
 {
-    public partial class Home : Form
+   
+        public partial class Home : Form
     {
+        public string UserNameGlobal ;//{ get; private set; }
+       
         public Home()
         {
             InitializeComponent();
@@ -56,6 +59,7 @@ namespace CS425_Target_IMD
             if (valid == "true")
             {
                 EmployeePage F = new EmployeePage();
+                F.UserNameGlobal = UserName;
                 Hide();
                 F.ShowDialog();
                 Close();
