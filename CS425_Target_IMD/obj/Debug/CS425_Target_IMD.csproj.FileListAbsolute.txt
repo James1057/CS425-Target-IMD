@@ -48,3 +48,4 @@ C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.csproj.CopyComplete
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.Hours.resources

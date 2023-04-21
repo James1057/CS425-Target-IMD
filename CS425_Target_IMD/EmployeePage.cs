@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace CS425_Target_IMD
 {
@@ -31,10 +33,27 @@ namespace CS425_Target_IMD
         private void EmployeePage_Load(object sender, EventArgs e)
         {
             //Loading elements on the home page
-            MessageBox.Show(UserNameGlobal);
-            textBox1.Text = UserNameGlobal;
+            //MessageBox.Show(UserNameGlobal);
+            textBox1.Text = "Thank you for Signing In";
             textBox1.ReadOnly = true;
+            textBox2.Text = "Please make a selection:";
+            textBox2.ReadOnly = true;
+            Hours F = new Hours();
+            F.UserNameGlobal = UserNameGlobal;
+            //Hide();
+            F.ShowDialog();
+            //Close();
 
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QuitButtonEmployee_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
