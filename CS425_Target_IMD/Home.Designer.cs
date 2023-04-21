@@ -40,6 +40,7 @@
             this.PasswordBox = new System.Windows.Forms.TextBox();
             this.HomeMessage = new System.Windows.Forms.TextBox();
             this.TargetLinkHome = new System.Windows.Forms.LinkLabel();
+            this.LinkCheck = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,12 +142,24 @@
             this.TargetLinkHome.Text = "www.target.com";
             this.TargetLinkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // LinkCheck
+            // 
+            this.LinkCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LinkCheck.Location = new System.Drawing.Point(569, 449);
+            this.LinkCheck.Name = "LinkCheck";
+            this.LinkCheck.Size = new System.Drawing.Size(100, 100);
+            this.LinkCheck.TabIndex = 10;
+            this.LinkCheck.Text = "Check Server Status";
+            this.LinkCheck.UseVisualStyleBackColor = true;
+            this.LinkCheck.Click += new System.EventHandler(this.LinkCheck_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(834, 561);
+            this.Controls.Add(this.LinkCheck);
             this.Controls.Add(this.TargetLinkHome);
             this.Controls.Add(this.HomeMessage);
             this.Controls.Add(this.PasswordBox);
@@ -180,6 +193,7 @@
         private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.TextBox HomeMessage;
         private System.Windows.Forms.LinkLabel TargetLinkHome;
+        private System.Windows.Forms.Button LinkCheck;
     }
 }
 
