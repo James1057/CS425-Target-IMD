@@ -41,6 +41,7 @@
             this.HomeMessage = new System.Windows.Forms.TextBox();
             this.TargetLinkHome = new System.Windows.Forms.LinkLabel();
             this.LinkCheck = new System.Windows.Forms.Button();
+            this.HomeDebugNextPage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,12 +154,23 @@
             this.LinkCheck.UseVisualStyleBackColor = true;
             this.LinkCheck.Click += new System.EventHandler(this.LinkCheck_Click);
             // 
+            // HomeDebugNextPage
+            // 
+            this.HomeDebugNextPage.Location = new System.Drawing.Point(504, 333);
+            this.HomeDebugNextPage.Name = "HomeDebugNextPage";
+            this.HomeDebugNextPage.Size = new System.Drawing.Size(250, 23);
+            this.HomeDebugNextPage.TabIndex = 11;
+            this.HomeDebugNextPage.Text = "DebugOption";
+            this.HomeDebugNextPage.UseVisualStyleBackColor = true;
+            this.HomeDebugNextPage.Click += new System.EventHandler(this.HomeDebugNextPage_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(834, 561);
+            this.Controls.Add(this.HomeDebugNextPage);
             this.Controls.Add(this.LinkCheck);
             this.Controls.Add(this.TargetLinkHome);
             this.Controls.Add(this.HomeMessage);
@@ -194,6 +206,7 @@
         private System.Windows.Forms.TextBox HomeMessage;
         private System.Windows.Forms.LinkLabel TargetLinkHome;
         private System.Windows.Forms.Button LinkCheck;
+        private System.Windows.Forms.Button HomeDebugNextPage;
     }
 }
 

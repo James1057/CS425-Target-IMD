@@ -71,6 +71,14 @@ namespace CS425_Target_IMD
             Close();
         }
 
+        private void HomeDebugNextPage_Click(object sender, EventArgs e)
+        {
+            EmployeePage F = new EmployeePage();
+            Hide();
+            F.ShowDialog();
+            Close();
+        }
+
         private void Home_Load(object sender, EventArgs e)
         {
             //Loading elements on the home page
