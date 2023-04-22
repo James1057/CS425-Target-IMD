@@ -45,6 +45,7 @@ namespace CS425_Target_IMD
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = table;
             conn.Close();
+            this.dataGridView1.AllowUserToAddRows = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

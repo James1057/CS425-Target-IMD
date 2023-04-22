@@ -51,3 +51,8 @@ C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.Hours.resources
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.StoreBanking.resources
 C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.Department.resources
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.ProductDepartment.resources
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\bin\Debug\CS425_Target_IMD.exe.manifest
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\bin\Debug\CS425_Target_IMD.application
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.exe.manifest
+C:\Users\hihih\OneDrive\Desktop\CS425_Project\CS425_IMD_Target\CS425_Target_IMD\obj\Debug\CS425_Target_IMD.application

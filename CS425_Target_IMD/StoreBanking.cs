@@ -47,6 +47,7 @@ namespace CS425_Target_IMD
             FieldText.ReadOnly = true;
             OperatorText.ReadOnly = true;
             ValueText.ReadOnly = true;
+            this.dataGridView1.AllowUserToAddRows = false;
         }
 
 
@@ -75,6 +76,7 @@ namespace CS425_Target_IMD
             adapter.Fill(table);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = table;
+            this.dataGridView1.AllowUserToAddRows = false;
         }
 
         private void BackButtonBanking_Click(object sender, EventArgs e)

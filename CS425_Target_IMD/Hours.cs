@@ -35,6 +35,7 @@ namespace CS425_Target_IMD
             adapter.Fill(table);
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.DataSource = table;
+            this.dataGridView1.AllowUserToAddRows = false;
             //Get the employee Name
             conn.Open();
             var stm2 = "SELECT fname,lname FROM employee WHERE EID = '" + UserNameGlobal + "'";
