@@ -43,18 +43,20 @@ namespace CS425_Target_IMD
             rdr.Read();
             NameHours.Text = "Hello " + rdr.GetString(0) + " " + rdr.GetString(1) + "!";
             NameHours.ReadOnly = true;
-            conn.Close(); ;
+            conn.Close();
             conn.Open();
+
             //Salary Catch
             var stm3= "SELECT SUM( wage * number_of_hours ) AS SalaryPaid FROM hours WHERE EID = '" + UserNameGlobal + "'";
             var cmd3 = new MySqlCommand(stm3, conn);
             MySqlDataReader rdr3 = cmd3.ExecuteReader();
             rdr3.Read();
-            SalaryHoursBox.Text = "Current Paid Salary is " + rdr3.GetString(0);
+            SalaryHoursBox.Text = "Current Paid Salary is $" + rdr3.GetString(0);
             SalaryHoursBox.ReadOnly = true;
 
             conn.Close();
         }
+        
 
         private void QuitButtonHours_Click(object sender, EventArgs e)
         {
@@ -69,9 +71,38 @@ namespace CS425_Target_IMD
             F.ShowDialog();
         }
 
-
-
-
-
+        private void AddHoursButton_Click(object sender, EventArgs e)
+        {
+            MySql.Data.MySqlClient.MySqlConnection conn;
+            string myConnectionString = DBUtils.GetDBConnection();
+            conn = new MySql.Data.MySqlClient.MySqlConnection();
+            conn.ConnectionString = myConnectionString;
+            conn.Open();
+            var stm = "Select max(entryID) as m from hours";
+            var cmd = new MySqlCommand(stm, conn);
+            MySqlDataReader rdr = cmd.ExecuteReader();
+            rdr.Read();
+            String var = rdr.GetString(0);
+            Int16 maxEntryID = (short)(Int16.Parse(var.Substring(2)) + 1);
+            String EntryIDString = "EH" + maxEntryID.ToString();
+            conn.Close();
+            conn.Open();
+            Int16 NumberHours = Int16.Parse(NumberOfHours.Text);
+            Int16 WageIn = Int16.Parse(WageInput.Text);
+            var stm2 = "INSERT INTO hours (entryID,number_of_hours,wage,EID) VALUES (@entryID,@NumberHours,@WageIn,@UserNameGlobal); ";
+            MySqlCommand cmd2 = new MySqlCommand(stm2, conn);
+            cmd2.Parameters.AddWithValue("@entryID", EntryIDString);
+            cmd2.Parameters.AddWithValue("@NumberHours", NumberHours);
+            cmd2.Parameters.AddWithValue("@WageIn", WageIn);
+            cmd2.Parameters.AddWithValue("@UserNameGlobal", UserNameGlobal);
+            cmd2.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Hours have been entered");
+            Hours F = new Hours();
+            F.UserNameGlobal = UserNameGlobal;
+            Hide();
+            F.ShowDialog();
+            Close();
+        }
     }  
 }
