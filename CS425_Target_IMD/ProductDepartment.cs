@@ -12,6 +12,7 @@ namespace CS425_Target_IMD
 {
     public partial class ProductDepartment : Form
     {
+        public string UserNameGlobal;
         public ProductDepartment()
         {
             InitializeComponent();
