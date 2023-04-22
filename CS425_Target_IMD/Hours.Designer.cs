@@ -39,6 +39,8 @@
             this.AddHoursButton = new System.Windows.Forms.Button();
             this.NumberOfHours = new System.Windows.Forms.TextBox();
             this.WageInput = new System.Windows.Forms.TextBox();
+            this.EnterHours = new System.Windows.Forms.TextBox();
+            this.EnterWage = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +48,9 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(49, 12);
+            this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 38);
+            this.textBox1.Size = new System.Drawing.Size(486, 38);
             this.textBox1.TabIndex = 0;
             // 
             // pictureBox1
@@ -119,17 +121,31 @@
             // 
             // NumberOfHours
             // 
-            this.NumberOfHours.Location = new System.Drawing.Point(24, 223);
+            this.NumberOfHours.Location = new System.Drawing.Point(49, 218);
             this.NumberOfHours.Name = "NumberOfHours";
             this.NumberOfHours.Size = new System.Drawing.Size(100, 20);
             this.NumberOfHours.TabIndex = 8;
             // 
             // WageInput
             // 
-            this.WageInput.Location = new System.Drawing.Point(200, 223);
+            this.WageInput.Location = new System.Drawing.Point(260, 218);
             this.WageInput.Name = "WageInput";
             this.WageInput.Size = new System.Drawing.Size(100, 20);
             this.WageInput.TabIndex = 9;
+            // 
+            // EnterHours
+            // 
+            this.EnterHours.Location = new System.Drawing.Point(49, 179);
+            this.EnterHours.Name = "EnterHours";
+            this.EnterHours.Size = new System.Drawing.Size(100, 20);
+            this.EnterHours.TabIndex = 10;
+            // 
+            // EnterWage
+            // 
+            this.EnterWage.Location = new System.Drawing.Point(260, 179);
+            this.EnterWage.Name = "EnterWage";
+            this.EnterWage.Size = new System.Drawing.Size(100, 20);
+            this.EnterWage.TabIndex = 11;
             // 
             // Hours
             // 
@@ -137,6 +153,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(834, 561);
+            this.Controls.Add(this.EnterWage);
+            this.Controls.Add(this.EnterHours);
             this.Controls.Add(this.WageInput);
             this.Controls.Add(this.NumberOfHours);
             this.Controls.Add(this.AddHoursButton);
@@ -170,5 +188,7 @@
         private System.Windows.Forms.Button AddHoursButton;
         private System.Windows.Forms.TextBox NumberOfHours;
         private System.Windows.Forms.TextBox WageInput;
+        private System.Windows.Forms.TextBox EnterHours;
+        private System.Windows.Forms.TextBox EnterWage;
     }
 }

@@ -55,6 +55,11 @@ namespace CS425_Target_IMD
             SalaryHoursBox.ReadOnly = true;
 
             conn.Close();
+
+            EnterHours.Text = "Enter Hours";
+            EnterWage.Text = "Enter Wage";
+            EnterHours.ReadOnly = true;
+            EnterWage.ReadOnly = true;
         }
         
 

@@ -103,7 +103,12 @@ namespace CS425_Target_IMD
             var erole = rdr.GetString(0);
 
             if (erole == "Manager") {
-                MessageBox.Show("Access Granted");
+                //MessageBox.Show("Access Granted");
+                Department F = new Department();
+                F.UserNameGlobal = UserNameGlobal;
+                Hide();
+                F.ShowDialog();
+                Close();
             } else {
                 MessageBox.Show("Access Denied");
             };
