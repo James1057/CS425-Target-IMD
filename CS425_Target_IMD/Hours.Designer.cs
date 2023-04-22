@@ -36,6 +36,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NameHours = new System.Windows.Forms.TextBox();
             this.SalaryHoursBox = new System.Windows.Forms.TextBox();
+            this.AddHoursButton = new System.Windows.Forms.Button();
+            this.NumberOfHours = new System.Windows.Forms.TextBox();
+            this.WageInput = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -104,12 +107,39 @@
             this.SalaryHoursBox.Size = new System.Drawing.Size(311, 31);
             this.SalaryHoursBox.TabIndex = 6;
             // 
+            // AddHoursButton
+            // 
+            this.AddHoursButton.Location = new System.Drawing.Point(49, 258);
+            this.AddHoursButton.Name = "AddHoursButton";
+            this.AddHoursButton.Size = new System.Drawing.Size(75, 23);
+            this.AddHoursButton.TabIndex = 7;
+            this.AddHoursButton.Text = "Add Hours";
+            this.AddHoursButton.UseVisualStyleBackColor = true;
+            this.AddHoursButton.Click += new System.EventHandler(this.AddHoursButton_Click);
+            // 
+            // NumberOfHours
+            // 
+            this.NumberOfHours.Location = new System.Drawing.Point(24, 223);
+            this.NumberOfHours.Name = "NumberOfHours";
+            this.NumberOfHours.Size = new System.Drawing.Size(100, 20);
+            this.NumberOfHours.TabIndex = 8;
+            // 
+            // WageInput
+            // 
+            this.WageInput.Location = new System.Drawing.Point(200, 223);
+            this.WageInput.Name = "WageInput";
+            this.WageInput.Size = new System.Drawing.Size(100, 20);
+            this.WageInput.TabIndex = 9;
+            // 
             // Hours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(834, 561);
+            this.Controls.Add(this.WageInput);
+            this.Controls.Add(this.NumberOfHours);
+            this.Controls.Add(this.AddHoursButton);
             this.Controls.Add(this.SalaryHoursBox);
             this.Controls.Add(this.NameHours);
             this.Controls.Add(this.dataGridView1);
@@ -137,5 +167,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox NameHours;
         private System.Windows.Forms.TextBox SalaryHoursBox;
+        private System.Windows.Forms.Button AddHoursButton;
+        private System.Windows.Forms.TextBox NumberOfHours;
+        private System.Windows.Forms.TextBox WageInput;
     }
 }
