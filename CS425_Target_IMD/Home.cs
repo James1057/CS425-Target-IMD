@@ -68,6 +68,7 @@ namespace CS425_Target_IMD
             {
                 MessageBox.Show("Bad input");
             }
+            conn.Close();
         }
 
         private void QuitButtonHome_Click(object sender, EventArgs e)

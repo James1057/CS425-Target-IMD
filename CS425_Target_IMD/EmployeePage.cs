@@ -55,5 +55,10 @@ namespace CS425_Target_IMD
         {
             Close();
         }
+
+        private void BackToEmployee_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
